@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=vVER_PDB_TEMP_PROD_06
+#SBATCH --job-name=VER_PDB_TEMP_PROD_06
 #SBATCH --nodes=1 
 #SBATCH --ntasks-per-node=1 
 #SBATCH --cluster=gpu 
