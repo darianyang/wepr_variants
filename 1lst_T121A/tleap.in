@@ -1,0 +1,19 @@
+source leaprc.protein.ff19SB
+source leaprc.gaff2
+source leaprc.water.opc
+loadamberprep ../restop/HIC.prepi
+loadamberprep ../restop/NTA.prepi
+loadamberparams ../restop/HIC.frcmod2 
+loadamberparams ../restop/NTA.frcmod2
+mol = loadpdb 1lst_T121A.pdb
+bond mol.56.CA mol.239.C13 S 
+bond mol.60.CA mol.239.C12 S
+bond mol.144.CA mol.240.C13 S 
+bond mol.148.CA mol.240.C12 S
+solvateOct mol OPCBOX 14.5
+addions2 mol Na+ 0
+check mol
+saveamberparm mol 1lst_T121A_solv.prmtop 1lst_T121A_solv.inpcrd
+savepdb mol 1lst_T121A_solv.pdb
+quit
+ 
