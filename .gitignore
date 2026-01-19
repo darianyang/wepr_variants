@@ -1,0 +1,14 @@
+*.nc
+*.dcd
+*.ncdf
+.DS_Store
+.vscode
+.ipynb_checkpoints
+*.pyc
+*.pyo
+*.swp
+.project
+*~
+*.swp
+*.swo
+__pycache__
