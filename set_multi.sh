@@ -4,13 +4,17 @@ SYSTEMS=(1lst_T121A 1lst_T121K)
 
 for SYSTEM in ${SYSTEMS[@]} ; do
 cd $SYSTEM
+echo "Prepping sim files for $SYSTEM"
 for V in {01..05} ; do
-    # make dir
-    mkdir v$V
+    echo "Prepping $SYSTEM replica $V"
+    # make dir if needed
+    if [ ! -d "v$V" ]; then
+        mkdir -v v$V
+    fi
     
     # copy files over
     cp ../stdMD_template/* v$V
-    cp ../${SYSTEM}_solv.* v$V
+    cp -v ${SYSTEM}_solv.* v$V
     
     # go into new dir
     cd v$V
@@ -24,4 +28,5 @@ for V in {01..05} ; do
     cd ..
 done
 cd ..
+echo "Done prepping $SYSTEM"
 done
