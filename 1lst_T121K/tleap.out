@@ -1,40 +1,40 @@
--I: Adding /Users/wmd122/miniconda3/envs/amber/dat/leap/prep to search path.
--I: Adding /Users/wmd122/miniconda3/envs/amber/dat/leap/lib to search path.
--I: Adding /Users/wmd122/miniconda3/envs/amber/dat/leap/parm to search path.
--I: Adding /Users/wmd122/miniconda3/envs/amber/dat/leap/cmd to search path.
+-I: Adding /software/rhel9/manual/install/amber/amber24/amber24/dat/leap/prep to search path.
+-I: Adding /software/rhel9/manual/install/amber/amber24/amber24/dat/leap/lib to search path.
+-I: Adding /software/rhel9/manual/install/amber/amber24/amber24/dat/leap/parm to search path.
+-I: Adding /software/rhel9/manual/install/amber/amber24/amber24/dat/leap/cmd to search path.
 -f: Source tleap.in.
 
 Welcome to LEaP!
 (no leaprc in search path)
 Sourcing: ./tleap.in
------ Source: /Users/wmd122/miniconda3/envs/amber/dat/leap/cmd/leaprc.protein.ff19SB
------ Source of /Users/wmd122/miniconda3/envs/amber/dat/leap/cmd/leaprc.protein.ff19SB done
+----- Source: /software/rhel9/manual/install/amber/amber24/amber24/dat/leap/cmd/leaprc.protein.ff19SB
+----- Source of /software/rhel9/manual/install/amber/amber24/amber24/dat/leap/cmd/leaprc.protein.ff19SB done
 Log file: ./leap.log
-Loading parameters: /Users/wmd122/miniconda3/envs/amber/dat/leap/parm/parm19.dat
+Loading parameters: /software/rhel9/manual/install/amber/amber24/amber24/dat/leap/parm/parm19.dat
 Reading title:
 PARM99 + frcmod.ff99SB + frcmod.parmbsc0 + OL3 for RNA + ff19SB
-Loading parameters: /Users/wmd122/miniconda3/envs/amber/dat/leap/parm/frcmod.ff19SB
+Loading parameters: /software/rhel9/manual/install/amber/amber24/amber24/dat/leap/parm/frcmod.ff19SB
 Reading force field modification type file (frcmod)
 Reading title:
 ff19SB AA-specific backbone CMAPs for protein 07/25/2019
-Loading library: /Users/wmd122/miniconda3/envs/amber/dat/leap/lib/amino19.lib
-Loading library: /Users/wmd122/miniconda3/envs/amber/dat/leap/lib/aminoct12.lib
-Loading library: /Users/wmd122/miniconda3/envs/amber/dat/leap/lib/aminont12.lib
------ Source: /Users/wmd122/miniconda3/envs/amber/dat/leap/cmd/leaprc.gaff2
------ Source of /Users/wmd122/miniconda3/envs/amber/dat/leap/cmd/leaprc.gaff2 done
+Loading library: /software/rhel9/manual/install/amber/amber24/amber24/dat/leap/lib/amino19.lib
+Loading library: /software/rhel9/manual/install/amber/amber24/amber24/dat/leap/lib/aminoct12.lib
+Loading library: /software/rhel9/manual/install/amber/amber24/amber24/dat/leap/lib/aminont12.lib
+----- Source: /software/rhel9/manual/install/amber/amber24/amber24/dat/leap/cmd/leaprc.gaff2
+----- Source of /software/rhel9/manual/install/amber/amber24/amber24/dat/leap/cmd/leaprc.gaff2 done
 Log file: ./leap.log
-Loading parameters: /Users/wmd122/miniconda3/envs/amber/dat/leap/parm/gaff2.dat
+Loading parameters: /software/rhel9/manual/install/amber/amber24/amber24/dat/leap/parm/gaff2.dat
 Reading title:
 AMBER General Force Field for organic molecules (Version 2.2.20, March 2021)
------ Source: /Users/wmd122/miniconda3/envs/amber/dat/leap/cmd/leaprc.water.opc
------ Source of /Users/wmd122/miniconda3/envs/amber/dat/leap/cmd/leaprc.water.opc done
-Loading library: /Users/wmd122/miniconda3/envs/amber/dat/leap/lib/atomic_ions.lib
-Loading library: /Users/wmd122/miniconda3/envs/amber/dat/leap/lib/solvents.lib
-Loading parameters: /Users/wmd122/miniconda3/envs/amber/dat/leap/parm/frcmod.opc
+----- Source: /software/rhel9/manual/install/amber/amber24/amber24/dat/leap/cmd/leaprc.water.opc
+----- Source of /software/rhel9/manual/install/amber/amber24/amber24/dat/leap/cmd/leaprc.water.opc done
+Loading library: /software/rhel9/manual/install/amber/amber24/amber24/dat/leap/lib/atomic_ions.lib
+Loading library: /software/rhel9/manual/install/amber/amber24/amber24/dat/leap/lib/solvents.lib
+Loading parameters: /software/rhel9/manual/install/amber/amber24/amber24/dat/leap/parm/frcmod.opc
 Reading force field modification type file (frcmod)
 Reading title:
 Parameters for OPC water (JPCL, 2014, 5 (21), pp 3863-3871)
-Loading parameters: /Users/wmd122/miniconda3/envs/amber/dat/leap/parm/frcmod.ionslm_126_opc
+Loading parameters: /software/rhel9/manual/install/amber/amber24/amber24/dat/leap/parm/frcmod.ionslm_126_opc
 Reading force field modification type file (frcmod)
 Reading title:
 Li/Merz ion parameters of atomic ions for the OPC water model (12-6 set)
@@ -231,63 +231,63 @@ Placed Na+ in mol at (-14.51, 10.76, 0.42).
 Done adding ions.
 Checking 'mol'....
 
-/Users/wmd122/miniconda3/envs/amber/bin/teLeap: Warning!
+/software/rhel9/manual/install/amber/amber24/amber24/bin/teLeap: Warning!
 Close contact of 1.331 angstroms between nonbonded atoms HG1 and HB2
 -------  .R<THR 13>.A<HG1 12> and .R<ASN 142>.A<HB2 6>
 
-/Users/wmd122/miniconda3/envs/amber/bin/teLeap: Warning!
+/software/rhel9/manual/install/amber/amber24/amber24/bin/teLeap: Warning!
 Close contact of 1.066 angstroms between nonbonded atoms HG and HG
 -------  .R<CYS 38>.A<HG 9> and .R<CYS 45>.A<HG 9>
 
-/Users/wmd122/miniconda3/envs/amber/bin/teLeap: Warning!
+/software/rhel9/manual/install/amber/amber24/amber24/bin/teLeap: Warning!
 Close contact of 0.924 angstroms between nonbonded atoms SG and HG
 -------  .R<CYS 38>.A<SG 8> and .R<CYS 45>.A<HG 9>
 
-/Users/wmd122/miniconda3/envs/amber/bin/teLeap: Warning!
+/software/rhel9/manual/install/amber/amber24/amber24/bin/teLeap: Warning!
 Close contact of 0.977 angstroms between nonbonded atoms HA and H12
 -------  .R<HIC 56>.A<HA 4> and .R<NTA 239>.A<H12 9>
 
-/Users/wmd122/miniconda3/envs/amber/bin/teLeap: Warning!
+/software/rhel9/manual/install/amber/amber24/amber24/bin/teLeap: Warning!
 Close contact of 1.402 angstroms between nonbonded atoms CA and H13
 -------  .R<HIC 56>.A<CA 3> and .R<NTA 239>.A<H13 10>
 
-/Users/wmd122/miniconda3/envs/amber/bin/teLeap: Warning!
+/software/rhel9/manual/install/amber/amber24/amber24/bin/teLeap: Warning!
 Close contact of 0.509 angstroms between nonbonded atoms CA and H12
 -------  .R<HIC 56>.A<CA 3> and .R<NTA 239>.A<H12 9>
 
-/Users/wmd122/miniconda3/envs/amber/bin/teLeap: Warning!
+/software/rhel9/manual/install/amber/amber24/amber24/bin/teLeap: Warning!
 Close contact of 1.182 angstroms between nonbonded atoms H and H13
 -------  .R<HIC 56>.A<H 2> and .R<NTA 239>.A<H13 10>
 
-/Users/wmd122/miniconda3/envs/amber/bin/teLeap: Warning!
+/software/rhel9/manual/install/amber/amber24/amber24/bin/teLeap: Warning!
 Close contact of 1.211 angstroms between nonbonded atoms N and H13
 -------  .R<HIC 56>.A<N 1> and .R<NTA 239>.A<H13 10>
 
-/Users/wmd122/miniconda3/envs/amber/bin/teLeap: Warning!
+/software/rhel9/manual/install/amber/amber24/amber24/bin/teLeap: Warning!
 Close contact of 1.149 angstroms between nonbonded atoms H and HG
 -------  .R<GLN 103>.A<H 2> and .R<SER 108>.A<HG 9>
 
-/Users/wmd122/miniconda3/envs/amber/bin/teLeap: Warning!
+/software/rhel9/manual/install/amber/amber24/amber24/bin/teLeap: Warning!
 Close contact of 0.981 angstroms between nonbonded atoms HD2 and H
 -------  .R<LYS 121>.A<HD2 12> and .R<LYS 121>.A<H 2>
 
-/Users/wmd122/miniconda3/envs/amber/bin/teLeap: Warning!
+/software/rhel9/manual/install/amber/amber24/amber24/bin/teLeap: Warning!
 Close contact of 1.338 angstroms between nonbonded atoms C and H12
 -------  .R<HIC 144>.A<C 5> and .R<NTA 240>.A<H12 9>
 
-/Users/wmd122/miniconda3/envs/amber/bin/teLeap: Warning!
+/software/rhel9/manual/install/amber/amber24/amber24/bin/teLeap: Warning!
 Close contact of 1.155 angstroms between nonbonded atoms CA and H12
 -------  .R<HIC 144>.A<CA 3> and .R<NTA 240>.A<H12 9>
 
-/Users/wmd122/miniconda3/envs/amber/bin/teLeap: Warning!
+/software/rhel9/manual/install/amber/amber24/amber24/bin/teLeap: Warning!
 Close contact of 1.197 angstroms between nonbonded atoms C and H9
 -------  .R<HIC 148>.A<C 5> and .R<NTA 240>.A<H9 39>
 
-/Users/wmd122/miniconda3/envs/amber/bin/teLeap: Warning!
+/software/rhel9/manual/install/amber/amber24/amber24/bin/teLeap: Warning!
 Close contact of 1.286 angstroms between nonbonded atoms HA and H9
 -------  .R<HIC 148>.A<HA 4> and .R<NTA 240>.A<H9 39>
 
-/Users/wmd122/miniconda3/envs/amber/bin/teLeap: Warning!
+/software/rhel9/manual/install/amber/amber24/amber24/bin/teLeap: Warning!
 Close contact of 0.374 angstroms between nonbonded atoms CA and H9
 -------  .R<HIC 148>.A<CA 3> and .R<NTA 240>.A<H9 39>
 Checking parameters for unit 'mol'.
@@ -297,7 +297,7 @@ check:  Warnings: 37923
 Unit is OK.
 Checking Unit.
 
-/Users/wmd122/miniconda3/envs/amber/bin/teLeap: Note.
+/software/rhel9/manual/install/amber/amber24/amber24/bin/teLeap: Note.
 Ignoring the warnings from Unit Checking.
 
 Building topology.
@@ -359,10 +359,10 @@ Marking per-residue atom chain types.
 Writing pdb file: 1lst_T121K_solv.pdb
    printing CRYST1 record to PDB file with box info
 
-/Users/wmd122/miniconda3/envs/amber/bin/teLeap: Warning!
+/software/rhel9/manual/install/amber/amber24/amber24/bin/teLeap: Warning!
  Converting N-terminal residue name to PDB format: NALA -> ALA
 
-/Users/wmd122/miniconda3/envs/amber/bin/teLeap: Warning!
+/software/rhel9/manual/install/amber/amber24/amber24/bin/teLeap: Warning!
  Converting C-terminal residue name to PDB format: CASP -> ASP
 	Quit
 
