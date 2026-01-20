@@ -1,10 +1,10 @@
-Unrestrained 10000 step minimization, 500 SD
+Unrestrained 2000 step minimization, 500 SD
 &cntrl
   imin      = 1,
   irest     = 0,
   ntx       = 1,
   ntmin     = 1,
-  maxcyc    = 10000,
+  maxcyc    = 2000,
   ncyc      = 500,
   ntr       = 0,
   ntb       = 1,
@@ -13,7 +13,7 @@ Unrestrained 10000 step minimization, 500 SD
   cut       = 10.0,
   ntpr      = 1,
   ntxo      = 2,
-  ntwr      = 10000,
+  ntwr      = 2000,
   ioutfm    = 1,
   ntwx      = 0,
   iwrap     = 1,
