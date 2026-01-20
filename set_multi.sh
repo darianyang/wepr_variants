@@ -23,7 +23,8 @@ for V in {01..05} ; do
     bash temp_sed.sh $SYSTEM v$V
 
     # run prep
-    sbatch prep_mpi.slurm 
+    #sbatch prep_mpi.slurm 
+    #sbatch prep_gpu.slurm 
 
     cd ..
 done
