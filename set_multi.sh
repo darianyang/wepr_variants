@@ -1,7 +1,7 @@
 #!/bin/bash
 
-GPU_PARTITION="preempt"
-EMAIL="dty7@pitt.edu"
+GPU_PARTITION="l40s"
+EMAIL="shp176@pitt.edu"
 SYSTEMS=(1lst_T121A 1lst_T121K)
 
 for SYSTEM in ${SYSTEMS[@]} ; do

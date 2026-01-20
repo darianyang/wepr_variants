@@ -5,7 +5,7 @@
 #SBATCH --cluster=smp
 #SBATCH --partition=smp
 #SBATCH --time=47:59:59 
-#SBATCH --mail-user=dty7@pitt.edu
+#SBATCH --mail-user=shp176@pitt.edu
 #SBATCH --mail-type=END,FAIL
 #SBATCH --output=slurm_prep.out 
 #SBATCH --error=slurm_prep.err 
