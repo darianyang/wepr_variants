@@ -4,9 +4,9 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --cluster=gpu
 #SBATCH --gres=gpu:1
-#SBATCH --partition=a100 
+#SBATCH --partition=TEMP_PARTITION 
 #SBATCH --time=23:59:59 
-#SBATCH --mail-user=shp176@pitt.edu
+#SBATCH --mail-user=TEMP_EMAIL
 #SBATCH --mail-type=END,FAIL
 #SBATCH --output=slurm_prep.out 
 #SBATCH --error=slurm_prep.err 

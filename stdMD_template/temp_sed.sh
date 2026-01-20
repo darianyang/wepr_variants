@@ -9,7 +9,11 @@
 
 PDB=$1
 VER=$2
+PARTITION=$3
+EMAIL=$4
 
-# apply globally to all files in current directory
-sed -i "s/PDB_TEMP/${PDB}/g" *
-sed -i "s/VER/${VER}/" * 
+# apply globally to all slurm files in current directory
+sed -i "s/PDB_TEMP/${PDB}/g" *.slurm
+sed -i "s/VER/${VER}/" *.slurm
+sed -i "s/TEMP_PARTITION/${PARTITION}/" *.slurm 
+sed -i "s/TEMP_EMAIL/${EMAIL}/" *.slurm

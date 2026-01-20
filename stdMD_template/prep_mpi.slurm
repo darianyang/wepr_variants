@@ -3,9 +3,9 @@
 #SBATCH --nodes=1 
 #SBATCH --ntasks-per-node=8
 #SBATCH --cluster=smp
-#SBATCH --partition=smp 
+#SBATCH --partition=smp
 #SBATCH --time=47:59:59 
-#SBATCH --mail-user=shp176@pitt.edu
+#SBATCH --mail-user=TEMP_EMAIL
 #SBATCH --mail-type=END,FAIL
 #SBATCH --output=slurm_prep.out 
 #SBATCH --error=slurm_prep.err 
