@@ -3,9 +3,9 @@
 #SBATCH --nodes=1 
 #SBATCH --ntasks-per-node=8
 #SBATCH --cluster=smp
-#SBATCH --partition=smp 
+#SBATCH --partition=smp
 #SBATCH --time=47:59:59 
-#SBATCH --mail-user=shp176@pitt.edu
+#SBATCH --mail-user=dty7@pitt.edu
 #SBATCH --mail-type=END,FAIL
 #SBATCH --output=slurm_prep.out 
 #SBATCH --error=slurm_prep.err 
@@ -31,7 +31,7 @@ PDB="1lst_T121K_solv"
 ###################################################
 ###################################################
 
-# 10000 step minimization (500 steepest descent)
+# 2000 step minimization (500 steepest descent)
 printf "\nstart min\n\n" 
 $DO_PARALLEL \
     $SANDER -O \

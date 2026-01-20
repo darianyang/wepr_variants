@@ -1,6 +1,6 @@
 #!/bin/bash
 # temp_sed.sh
-# replace 1lst_T121K and v03 in the std sim scripts dir with target PDB
+# replace PDB_TEMP and VER in the std sim scripts dir with target PDB
 
 # Parameters
 # ----------
@@ -8,8 +8,12 @@
 # arg 2 = version of the replicate  :   e.g. v00
 
 PDB=$1
-v03=$2
+VER=$2
+PARTITION=$3
+EMAIL=$4
 
-# apply globally to all files in current directory
-sed -i "s/1lst_T121K/${PDB}/g" *
-sed -i "s/v03/${VER}/" * 
+# apply globally to all slurm files in current directory
+sed -i "s/PDB_TEMP/${PDB}/g" *.slurm
+sed -i "s/VER/${VER}/" *.slurm
+sed -i "s/TEMP_PARTITION/${PARTITION}/" *.slurm 
+sed -i "s/TEMP_EMAIL/${EMAIL}/" *.slurm
