@@ -3,10 +3,11 @@ import numpy as np
 import sys
 
 traj_in = sys.argv[1]
-data_out = sys.argv[2]
+top_in = sys.argv[2]
+data_out = sys.argv[3]
 
 # load in the trajectory
-traj = md.load(traj_in, top="1lst.prmtop")
+traj = md.load(traj_in, top=top_in)
 
 all_molecules = traj.topology.find_molecules()
 all_molecules.sort(key=lambda x: -len(x))
