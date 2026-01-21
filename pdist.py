@@ -2,19 +2,23 @@
 import mdap
 import matplotlib.pyplot as plt
 
-plt.style.use("/Users/darian/github/wedap/wedap/styles/default.mplstyle")
+#plt.style.use("/Users/darian/github/wedap/wedap/styles/default.mplstyle")
 
-def oa():
-    plot_options = {"xlim" : (0,60),
-                    "ylim" : (0,60),
-                    "xlabel" : "Orentiation Angle 1 (°)",
-                    "ylabel" : "Orentiation Angle 2 (°)",
+variant = "1lst_T121K"
+
+def wepr_plot():
+    plot_options = {"xlim" : (30,90),
+                    "ylim" : (25,55),
+                    "xlabel" : "Opening Angle ($\degree$)",
+                    "ylabel" : "Cu(II)-Cu(II) Distance ($\AA$)",
                     #"cmap" : "Blues",
                     "p_max" : 5,
+                    "p_units" : "kcal",
+                    "title" : variant, 
                     }
-    oas = [f"v{i:02d}/1us/o_angle.dat" for i in range(0,5)]
-    mdap.MD_Plot(Xname=oas, Xindex=1, Yname=oas, Yindex=2, data_type="pdist", **plot_options).plot()
+    pc = [f"{variant}/v{i:02d}/06_pcoord.dat" for i in range(1,6)]
+    mdap.MD_Plot(Xname=pc, Xindex=1, Yname=pc, Yindex=0, data_type="pdist", **plot_options).plot()
 
-oa()
-plt.savefig("figures/oa_pdist.pdf")
-plt.show()
+wepr_plot()
+plt.savefig(f"06_pdist_{variant}.pdf")
+#plt.show()
