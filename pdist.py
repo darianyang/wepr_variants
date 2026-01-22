@@ -18,8 +18,9 @@ def wepr_plot():
                     "title" : variant, 
                     }
     #pc = [f"{variant}/v{i:02d}/06_pcoord.dat" for i in range(1,6)]
+    #mdap.MD_Plot(Xname=pc, Xindex=1, Yname=pc, Yindex=0, data_type="pdist", **plot_options).plot()
     pc = [f"{variant}/rep{i}.dat" for i in range(1,6)]
-    mdap.MD_Plot(Xname=pc, Xindex=1, Yname=pc, Yindex=0, data_type="pdist", **plot_options).plot()
+    mdap.MD_Plot(Xname=pc, Xindex=0, Yname=pc, Yindex=2, data_type="pdist", **plot_options).plot()
 
 wepr_plot()
 #plt.savefig(f"06_pdist_{variant}.pdf")
