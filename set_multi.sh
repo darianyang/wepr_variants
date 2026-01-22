@@ -2,8 +2,9 @@
 
 GPU_PARTITION="l40s"
 EMAIL="shp176@pitt.edu"
-SYSTEMS=(1lst_T121A 1lst_T121K)
+#SYSTEMS=(1lst_T121A 1lst_T121K)
 #SYSTEMS=(1lst_Y14A 1lst_T121A-Y14A)
+SYSTEMS=(1lst_WT)
 
 for SYSTEM in ${SYSTEMS[@]} ; do
 cd $SYSTEM
