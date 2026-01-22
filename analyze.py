@@ -9,10 +9,11 @@ data_out = sys.argv[3]
 # load in the trajectory
 traj = md.load(traj_in, top=top_in)
 
-all_molecules = traj.topology.find_molecules()
-all_molecules.sort(key=lambda x: -len(x))
-anchors2 = all_molecules[:2]
-traj.image_molecules(anchor_molecules=anchors2)
+# image
+#all_molecules = traj.topology.find_molecules()
+#all_molecules.sort(key=lambda x: -len(x))
+#anchors2 = all_molecules[:2]
+#traj.image_molecules(anchor_molecules=anchors2)
 
 # calc RMSD
 

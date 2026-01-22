@@ -2,7 +2,7 @@
 import mdap
 import matplotlib.pyplot as plt
 
-#plt.style.use("/Users/darian/github/wedap/wedap/styles/default.mplstyle")
+plt.style.use("~/Apps/wedap/styles/default.mplstyle")
 
 variant = "1lst_T121K"
 
