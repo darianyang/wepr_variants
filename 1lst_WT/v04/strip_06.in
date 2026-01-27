@@ -1,0 +1,7 @@
+parm 1lst_WT_solv.prmtop
+trajin 06_prod.nc
+autoimage
+strip :WAT,NA+,Cl- parmout 1lst_WT_dry.prmtop
+trajout 06_prod_dry.nc
+go
+quit
