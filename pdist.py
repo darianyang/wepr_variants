@@ -88,7 +88,7 @@ if __name__ == "__main__":
     variants = ["1lst_T121A"]
     #variants = ["noliz"]
     for variant in variants:
-        wepr_plot(variant, title=None)
+        wepr_plot(variant, title="")
         #plt.savefig(f"06_pdist_{variant}.pdf")
         plt.savefig(f"600ns_pdist_{variant}.pdf")
     ##plt.savefig(f"all_pdist_{variant}.pdf")
