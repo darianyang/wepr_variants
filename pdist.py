@@ -2,8 +2,8 @@
 import mdap
 import matplotlib.pyplot as plt
 
-#plt.style.use("~/Apps/wedap/styles/default.mplstyle")
-plt.style.use("~/github/wedap/styles/default.mplstyle")
+plt.style.use("~/Apps/wedap/styles/default.mplstyle")
+#plt.style.use("~/github/wedap/styles/default.mplstyle")
 
 open_2lao = [4.361296844482421875e+01, 7.470593189823416935e+01]
 closed_1lst = [3.103689956665039062e+01, 5.269151791352962277e+01]
