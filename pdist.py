@@ -51,7 +51,7 @@ def plot_all_variants(variants=["1lst_WT", "1lst_T121A", "1lst_T121K", "1lst_Y14
                         "ax" : axes.flat[i],
                         }
         #pc = [f"{variant}/v{i:02d}/06_pcoord.dat" for i in range(1,6)]
-        pc = [f"{variant}/v{i:02d}/0{j}_pcoord.dat" for i in range(1,6) for j in [6, 7, 8]]
+        pc = [f"{variant}/v{i:02d}/0{j}_pcoord.dat" for i in range(1,6) for j in range(6,9)]
         mdap.MD_Plot(Xname=pc, Xindex=1, Yname=pc, Yindex=0, data_type="pdist", **plot_options).plot()
         # Mark reference points
         axes.flat[i].plot(open_2lao[1], open_2lao[0], 'o', markersize=8, label="Open")
@@ -64,7 +64,7 @@ def plot_timeseries(variant, replicas=5, ax=None):
 
     for replica in range(1, replicas+1):
         #pc = f"{variant}/v{replica:02d}/06_pcoord.dat"
-        pc = [f"{variant}/v{replica:02d}/0{i}_pcoord.dat" for i in [6, 7, 8]]
+        pc = [f"{variant}/v{replica:02d}/0{i}_pcoord.dat" for i in range(6, 9)]
         plot_options = {"xlabel" : "Time (ns)",
                         "title" : f"{variant[5:]}",
                         "plot_mode" : "line",
@@ -94,6 +94,6 @@ if __name__ == "__main__":
     # #plt.savefig(f"all_variants_pdist.pdf")
     # plt.show()
     #variants = ["1lst_WT", "1lst_T121A", "1lst_Y14A"]
-#    for variant in variants:
-#        plot_timeseries(variant)
-#        plt.savefig(f"timeseries_1us_{variant}.pdf")
+    for variant in variants:
+        plot_timeseries(variant)
+        plt.savefig(f"timeseries_1us_{variant}.pdf")
