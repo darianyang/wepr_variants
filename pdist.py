@@ -83,14 +83,14 @@ def plot_timeseries(variant, replicas=5, ax=None):
 if __name__ == "__main__":
     variants = ["1lst_WT", "1lst_Y14A", "1lst_T121A-Y14A"]
     variants = ["1lst_WT", "1lst_T121A", "1lst_T121K", "1lst_Y14A", "1lst_T121A-Y14A"]
-    #variants = ["1lst_WT", "1lst_T121A"]
-    variants = ["1lst_WT"]
-    variants = ["1lst_T121A"]
+    variants = ["1lst_WT", "1lst_T121A"]
+    #variants = ["1lst_WT"]
+    #variants = ["1lst_T121A"]
     #variants = ["noliz"]
     for variant in variants:
         wepr_plot(variant, title="")
-        #plt.savefig(f"06_pdist_{variant}.pdf")
-        plt.savefig(f"600ns_pdist_{variant}.pdf")
+        #plt.savefig(f"figs/06_pdist_{variant}.pdf")
+        plt.savefig(f"figs/600ns_pdist_{variant}.pdf")
     ##plt.savefig(f"all_pdist_{variant}.pdf")
 
     # wepr_plot("1lst_WT")
@@ -103,4 +103,4 @@ if __name__ == "__main__":
     #variants = ["1lst_WT", "1lst_T121A", "1lst_Y14A"]
     #for variant in variants:
     #    plot_timeseries(variant)
-    #    plt.savefig(f"timeseries_1us_{variant}.pdf")
+    #    plt.savefig(f"figs/timeseries_1us_{variant}.pdf")
