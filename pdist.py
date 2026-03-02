@@ -62,7 +62,8 @@ def plot_timeseries(variant, replicas=5, ax=None):
         fig, ax = plt.subplots(1, 2, figsize=(10,3))
 
     for replica in range(1, replicas+1):
-        pc = f"{variant}/v{replica:02d}/06_pcoord.dat"
+        #pc = f"{variant}/v{replica:02d}/06_pcoord.dat"
+        pc = [f"{variant}/v{replica:02d}/0{i}_pcoord.dat" for i in [6, 7, 8]]
         plot_options = {"xlabel" : "Time (ns)",
                         "title" : f"{variant[5:]}",
                         "plot_mode" : "line",
@@ -77,6 +78,7 @@ if __name__ == "__main__":
     variants = ["1lst_WT", "1lst_Y14A", "1lst_T121A-Y14A"]
     variants = ["noliz"]
     variants = ["1lst_WT", "1lst_T121A", "1lst_T121K", "1lst_Y14A", "1lst_T121A-Y14A"]
+    variants = ["1lst_WT", "1lst_T121A"]
     # for variant in variants:
     #     wepr_plot(variant)
     #     plt.savefig(f"06_pdist_{variant}.pdf")
@@ -92,4 +94,4 @@ if __name__ == "__main__":
     #variants = ["1lst_WT", "1lst_T121A", "1lst_Y14A"]
     for variant in variants:
         plot_timeseries(variant)
-        plt.savefig(f"timeseries_{variant}.pdf")
+        plt.savefig(f"timeseries_1us_{variant}.pdf")
