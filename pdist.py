@@ -24,12 +24,16 @@ def wepr_plot(variant, ax=None, title=None):
                     "ax" : ax,
                     }
     #pc = [f"{variant}/v{i:02d}/06_pcoord.dat" for i in range(1,6)]
-    #mdap.MD_Plot(Xname=pc, Xindex=1, Yname=pc, Yindex=0, data_type="pdist", **plot_options).plot()
+    pc = [f"{variant}/v{i:02d}/0{j}_pcoord.dat" for i in range(1,6) for j in range(6,9)]
+    mdap.MD_Plot(Xname=pc, Xindex=1, Yname=pc, Yindex=0, data_type="pdist", **plot_options).plot()
+
     #pc = [f"{variant}/rep{i}.dat" for i in range(1,6)]
     #mdap.MD_Plot(Xname=pc, Xindex=0, Yname=pc, Yindex=2, data_type="pdist", **plot_options).plot()
-    pc = [f"{variant}/all_pcoord_{i}.dat" for i in range(1,6)]
+    
+    #pc = [f"{variant}/all_pcoord_{i}.dat" for i in range(1,6)]
     #mdap.MD_Plot(Xname=pc, Xindex=1, Yname=pc, Yindex=0, data_type="pdist", last_frame=20000, **plot_options).plot()
-    mdap.MD_Plot(Xname=pc, Xindex=1, Yname=pc, Yindex=0, data_type="pdist", last_frame=60000, **plot_options).plot()
+    #mdap.MD_Plot(Xname=pc, Xindex=1, Yname=pc, Yindex=0, data_type="pdist", last_frame=60000, **plot_options).plot()
+    
     # Mark reference points
     ax.plot(open_2lao[1], open_2lao[0], 'o', color="tab:orange", markersize=8, label="Open", markeredgecolor="black")
     ax.plot(closed_1lst[1], closed_1lst[0], 'o', color="white", markersize=8, label="Closed", markeredgecolor="black")
@@ -79,10 +83,11 @@ def plot_timeseries(variant, replicas=5, ax=None):
 if __name__ == "__main__":
     variants = ["1lst_WT", "1lst_Y14A", "1lst_T121A-Y14A"]
     variants = ["1lst_WT", "1lst_T121A", "1lst_T121K", "1lst_Y14A", "1lst_T121A-Y14A"]
-    variants = ["1lst_WT", "1lst_T121A"]
-    variants = ["noliz"]
+    #variants = ["1lst_WT", "1lst_T121A"]
+    variants = ["1lst_WT"]
+    #variants = ["noliz"]
     for variant in variants:
-        wepr_plot(variant)
+        wepr_plot(variant, title=None)
         #plt.savefig(f"06_pdist_{variant}.pdf")
         plt.savefig(f"600ns_pdist_{variant}.pdf")
     ##plt.savefig(f"all_pdist_{variant}.pdf")
