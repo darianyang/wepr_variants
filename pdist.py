@@ -50,7 +50,8 @@ def plot_all_variants(variants=["1lst_WT", "1lst_T121A", "1lst_T121K", "1lst_Y14
                         "title" : variant[5:], 
                         "ax" : axes.flat[i],
                         }
-        pc = [f"{variant}/v{i:02d}/06_pcoord.dat" for i in range(1,6)]
+        #pc = [f"{variant}/v{i:02d}/06_pcoord.dat" for i in range(1,6)]
+        pc = [f"{variant}/v{i:02d}/0{j}_pcoord.dat" for i in range(1,6) for j in [6, 7, 8]]
         mdap.MD_Plot(Xname=pc, Xindex=1, Yname=pc, Yindex=0, data_type="pdist", **plot_options).plot()
         # Mark reference points
         axes.flat[i].plot(open_2lao[1], open_2lao[0], 'o', markersize=8, label="Open")
@@ -79,9 +80,10 @@ if __name__ == "__main__":
     variants = ["noliz"]
     variants = ["1lst_WT", "1lst_T121A", "1lst_T121K", "1lst_Y14A", "1lst_T121A-Y14A"]
     variants = ["1lst_WT", "1lst_T121A"]
-    # for variant in variants:
-    #     wepr_plot(variant)
-    #     plt.savefig(f"06_pdist_{variant}.pdf")
+    for variant in variants:
+        wepr_plot(variant)
+        #plt.savefig(f"06_pdist_{variant}.pdf")
+        plt.savefig(f"1us_pdist_{variant}.pdf")
     ##plt.savefig(f"all_pdist_{variant}.pdf")
 
     # wepr_plot("1lst_WT")
@@ -92,6 +94,6 @@ if __name__ == "__main__":
     # #plt.savefig(f"all_variants_pdist.pdf")
     # plt.show()
     #variants = ["1lst_WT", "1lst_T121A", "1lst_Y14A"]
-    for variant in variants:
-        plot_timeseries(variant)
-        plt.savefig(f"timeseries_1us_{variant}.pdf")
+#    for variant in variants:
+#        plot_timeseries(variant)
+#        plt.savefig(f"timeseries_1us_{variant}.pdf")
