@@ -16,9 +16,12 @@ for V in {01..05} ; do
     # run prep and initial 200ns prod
     #sbatch prep_gpu.slurm 
 
-    # run prod 0.2-1us
-    sbatch h2p_1gpu_prod_07.slurm
-
+    # run prod
+    if [$V -eq 4] ; then
+        sbatch h2p_1gpu_prod_07.slurm
+    else
+        sbatch h2p_1gpu_prod_08.slurm
+    fi
     cd ..
 done
 cd ..

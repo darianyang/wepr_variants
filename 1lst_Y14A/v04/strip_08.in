@@ -1,0 +1,6 @@
+trajin 08_prod.nc
+autoimage
+strip :WAT,NA+,Cl- parmout 1lst_Y14A_dry.prmtop
+trajout 08_prod_dry.nc
+go
+quit

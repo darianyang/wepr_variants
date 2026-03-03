@@ -1,0 +1,19 @@
++ SANDER=pmemd.cuda
++ INP=07_prod.in
++ TOP=1lst_Y14A_solv.prmtop
++ CRD=06_prod.rst
++ OUT=07_prod
++ pmemd.cuda -O -i 07_prod.in -p 1lst_Y14A_solv.prmtop -c 06_prod.rst -r 07_prod.rst -o 07_prod.out -e 07_prod.ene -v 07_prod.vel -inf 07_prod.nfo -x 07_prod.nc
+           0
++ echo 'trajin 07_prod.nc'
++ echo autoimage
++ echo 'strip :WAT,NA+,Cl- parmout 1lst_Y14A_dry.prmtop'
++ echo 'trajout 07_prod_dry.nc'
++ echo go
++ echo quit
++ cpptraj -i strip_07.in
+Error: No topology selected or no topologies present.
+	1 errors encountered reading input.
+Error: Error(s) occurred during execution.
++ '[' -f 07_prod_dry.nc ']'
++ sbatch h2p_1gpu_prod_08.slurm
