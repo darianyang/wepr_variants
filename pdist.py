@@ -86,6 +86,7 @@ if __name__ == "__main__":
     variants = ["1lst_WT", "1lst_T121A"]
     #variants = ["1lst_WT"]
     #variants = ["1lst_T121A"]
+    variants = ["1lst_Y14A"]
     #variants = ["noliz"]
     for variant in variants:
         wepr_plot(variant, title="")
