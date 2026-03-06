@@ -2,7 +2,8 @@
 
 #SYSTEMS=(1lst_T121A 1lst_T121K)
 #SYSTEMS=(1lst_WT 1lst_Y14A 1lst_T121A-Y14A)
-SYSTEMS=(1lst_WT 1lst_T121A)
+#SYSTEMS=(1lst_WT 1lst_T121A)
+SYSTEMS=(1lst_Y14A)
 
 for SYSTEM in ${SYSTEMS[@]} ; do
 cd $SYSTEM

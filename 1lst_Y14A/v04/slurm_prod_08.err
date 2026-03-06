@@ -4,7 +4,9 @@
 + CRD=07_prod.rst
 + OUT=08_prod
 + pmemd.cuda -O -i 08_prod.in -p 1lst_Y14A_solv.prmtop -c 07_prod.rst -r 08_prod.rst -o 08_prod.out -e 08_prod.ene -v 08_prod.vel -inf 08_prod.nfo -x 08_prod.nc
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
            0
++ echo 'parm 1lst_Y14A_solv.prmtop'
 + echo 'trajin 08_prod.nc'
 + echo autoimage
 + echo 'strip :WAT,NA+,Cl- parmout 1lst_Y14A_dry.prmtop'
@@ -12,7 +14,6 @@
 + echo go
 + echo quit
 + cpptraj -i strip_08.in
-Error: No topology selected or no topologies present.
-	1 errors encountered reading input.
-Error: Error(s) occurred during execution.
 + '[' -f 08_prod_dry.nc ']'
++ rm 08_prod.nc
++ mv 08_prod_dry.nc 08_prod.nc
